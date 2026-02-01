@@ -19,4 +19,4 @@
  *
  */
 
-const String googlePlacesApiKey = "AIzaSyByaUZY78yNkrVsx1nbVQNBZ3n1bUAUoWk";
+const String googlePlacesApiKey = String.fromEnvironment('GOOGLE_PLACES_KEY');

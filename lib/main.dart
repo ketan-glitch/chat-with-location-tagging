@@ -19,6 +19,8 @@
  *
  */
 
+import 'package:chat_with_location_tagging/src/core/config/env.dart' as Env;
+
 import 'src/core/app_providers.dart';
 import 'src/core/injection_container.dart';
 import 'src/features/auth/ui/screens/login_page.dart';
@@ -35,6 +37,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    print("API KEY => ${Env.googlePlacesApiKey}");
+
     return AppProviders(child: MaterialApp(home: LoginPage()));
   }
 }
